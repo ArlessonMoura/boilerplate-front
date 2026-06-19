@@ -1,18 +1,27 @@
 {
   "recommendations": [
+    "formulahendry.code-runner",
+    "ritwickdey.liveserver",
+    "bradlc.vscode-tailwindcss",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "stylelint.vscode-stylelint",
-    "usernamehw.errorlens",
     "eamodio.gitlens",
-    "ritwickdey.liveserver",
     "wix.vscode-import-cost",
     "pkief.material-icon-theme",
     "christian-kohler.npm-intellisense",
     "dracula-theme.theme-dracula",
-    "formulahendry.code-runner",
     "streetsidesoftware.code-spell-checker",
     "streetsidesoftware.code-spell-checker-portuguese-brazilian",
-    "bradlc.vscode-tailwindcss"
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-complete-tag",
+    "formulahendry.auto-rename-tag",
+    "codeviz.codeviz",
+    "naumovs.color-highlight",
+    "heybourn.headwind",
+    "kisstkondoros.vscode-gutter-preview",
+    "davidanson.vscode-markdownlint",
+    "streetsidesoftware.code-spell-checker-cspell-bundled-dictionaries",
+    "ecmel.vscode-html-css"
   ]
 }
