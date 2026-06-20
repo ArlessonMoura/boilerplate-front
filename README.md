@@ -164,19 +164,39 @@ npm run lint:fix && npm run stylelint:fix
 
 O projeto inclui configurações recomendadas para o VS Code no arquivo `.vscode/extensions.json`. As extensões recomendadas incluem:
 
+### Linting e Formatação
 - **ESLint** - Integração do ESLint no VS Code
 - **Prettier** - Formatação de código
 - **Stylelint** - Linting para CSS
-- **Error Lens** - Mostra erros inline no código
-- **GitLens** - Superpoderes para o Git
+- **MarkdownLint** - Linting para arquivos Markdown
+
+### Desenvolvimento Web
 - **Live Server** - Servidor de desenvolvimento local
+- **HTML CSS Support** - IntelliSense para HTML e CSS
+- **Auto Close Tag** - Fecha tags HTML automaticamente
+- **Auto Complete Tag** - Autocomplete para tags HTML
+- **Auto Rename Tag** - Renomeia tags HTML em pares
+
+### Produtividade
+- **GitLens** - Superpoderes para o Git
 - **Import Cost** - Mostra o tamanho das importações
 - **Material Icon Theme** - Ícones bonitos para arquivos
 - **npm Intellisense** - Autocomplete para imports
-- **Dracula Theme** - Tema escuro popular
 - **Code Runner** - Executa trechos de código
-- **Code Spell Checker** - Verificador ortográfico
+- **Gutter Preview** - Preview de imagens no gutter
+
+### Tailwind CSS
 - **Tailwind CSS IntelliSense** - Autocomplete para Tailwind
+- **Headwind** - Class sorting para Tailwind CSS
+
+### Verificação Ortográfica
+- **Code Spell Checker** - Verificador ortográfico em inglês
+- **Code Spell Checker (Portuguese)** - Verificador ortográfico em português
+- **CSpell Bundled Dictionaries** - Dicionários adicionais
+
+### Visualização
+- **Color Highlight** - Destaque de cores no código
+- **Codeviz** - Visualização de código
 
 Para instalar todas as extensões recomendadas automaticamente, clique em "Instalar Tudo" quando a notificação aparecer ao abrir o projeto.
 
@@ -240,3 +260,106 @@ Se você tiver dúvidas ou problemas:
 
 - Abra uma [issue no GitHub](https://github.com/ArlessonMoura/boilerplate-front/issues)
 - Entre em contato através do perfil LinkedIn: [ArlessonMoura](https://www.linkedin.com/in/arlesson-moura/)
+
+---
+
+## 💡 Dica: Configuração Avançada do VS Code
+
+Para uma experiência de desenvolvimento otimizada com Node.js e ecossistema JavaScript, você pode adicionar estas configurações ao seu arquivo `settings.json` do VS Code:
+
+```json
+{
+  "prettier.singleQuote": true,
+  "prettier.bracketSpacing": true,
+  "prettier.bracketSameLine": false,
+  "prettier.singleAttributePerLine": false,
+  "prettier.printWidth": 90,
+  "prettier.semi": true,
+  "prettier.trailingComma": "all",
+
+  "stylelint.snippet": ["css", "less", "postcss", "scss", "sass"],
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.organizeImports": "always"
+  },
+
+  "eslint.format.enable": false,
+
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+
+  "security.workspace.trust.untrustedFiles": "prompt",
+
+  "cSpell.language": "en,pt-BR",
+  "cSpell.userWords": [
+    "esbenp",
+    "stylelint",
+    "dbaeumer"
+  ],
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  "search.followSymlinks": false,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true
+  },
+
+  "files.autoSave": "off",
+  "files.exclude": {
+    "**/.git": true
+  },
+  "search.exclude": {
+    "**/.git": true
+  }
+}
+```
+
+**Para aplicar estas configurações:**
+
+1. Abra o VS Code
+2. Pressione `Ctrl + ,` (ou `Cmd + ,` no Mac) para abrir as configurações
+3. Clique no ícone de `{}` no canto superior direito para abrir o `settings.json`
+4. Copie e cole o JSON acima no arquivo
+5. Salve o arquivo
